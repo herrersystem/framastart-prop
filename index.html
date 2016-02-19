@@ -9,7 +9,7 @@
 		<meta name="author" content="Framasoft">
 		
 		<link rel="stylesheet" href="css/framastart.css">	
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 	</head>
 	<body>
 		<nav class="navbar navbar-default" style="background-color:#2A2A2A;">
@@ -998,8 +998,8 @@
 			<div class="container">
 				<p>
 					Copyleft Framasoft 2012 - Sauf mention contraire, les textes sont placés sous licence Creative Commons BY-SA.
-					&middot;<a class="btn" data-toggle="modal" href="#Credits" >Contact &amp; Crédits</a> 
-					&middot;<a class="btn" data-toggle="modal" href="#Mentions" >A propos</a>
+					&middot;<a class="btn" data-toggle="modal" data-target="#Credits">Contact &amp; Crédits</a> 
+					&middot;<a class="btn" data-toggle="modal" data-target="#Mentions">A propos</a>
 				</p>
 			</div>
 		</footer>
@@ -1132,30 +1132,34 @@
 				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
 			</div>
 		</div>
-
-		<div class="fade modal hide" id="Credits">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Crédits</h3>
-			</div>
-			<div class="modal-body">
-				<p>Pour toute question concernant Framastart, vous pouvez envoyer utiliser le site <strong><a href="http://contact.framasoft.org">http://contact.framasoft.org</a></strong></p>
-				<p>&nbsp;</p>
-				<p>Framastart est un site web référençant les logiciels libres les plus courants.<br/>
-				<p>Framastart est placé sous licence libre <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA 3.0</a></p>
-				<p>Framastart utilise le framework libre Boostrap ainsi que la librairie jQuery.</p>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+		
+		<div class="fade modal" tabindex="-1" role="dialog" id="Credits">
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-header" style="background-color:#585858;color:#fff;">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Crédits</h4>
+				</div>
+				<div class="modal-body" style="background-color:#f9f9f9;">
+					<p>Pour toute question concernant Framastart, vous pouvez envoyer utiliser le site <strong><a href="http://contact.framasoft.org">http://contact.framasoft.org</a></strong></p>
+					<br>
+					<ul>
+						<li>Framastart est un site web référençant les logiciels libres les plus courants.</li>
+						<li>Framastart est placé sous licence libre <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA 3.0</a></li>
+						<li>Framastart utilise le framework libre Boostrap ainsi que la librairie jQuery.</li>
+					</ul>
+				</div>
+				<div class="modal-footer" style="background-color:#f9f9f9;">
+					<button class="btn btn-default" data-dismiss="modal">Fermer</button>
+				</div>
 			</div>
 		</div>
 
-		<div class="modal hide fade" id="Mentions">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Mentions légales</h3>
+		<div class="modal fade" tabindex="-1" role="dialog" id="Mentions">
+			<div class="modal-header" style="background-color:#585858;color:#fff;">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Mentions légales</h4>
 			</div>
-			<div class="modal-body">			
+			<div class="modal-body" style="background-color:#f9f9f9;">			
 				<h2>Editeur</h2>
 				<h3>Framasoft</h3>
 				<p>Association loi 1901 déclarée en sous-préfecture d’Arles le 2
@@ -1205,7 +1209,7 @@
 				<p>La modification interviendra dans des délais raisonnables à compter
 				de la réception de la demande de l’utilisateur.</p>
 				<h1>LIMITATION DE RESPONSABILITE</h1>
-				<p>Ce ste comporte des informations mises à disposition par des
+				<p>Ce site comporte des informations mises à disposition par des
 				sociétés externes ou des liens hypertextes vers d’autres sites qui
 				n’ont pas été développés par le Framasoft. Le contenu mis à disposition
 				sur le Site est fourni à titre informatif. L’existence d’un lien de ce
@@ -1240,8 +1244,8 @@
 				<h2>Propriété intellectuelle.</h2>
 				<p>Les contenus sont publiés sous la responsabilité des utilisateurs.</p>
 			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+			<div class="modal-footer" style="background-color:#f9f9f9;">
+				<button class="btn btn-default" data-dismiss="modal">Fermer</button>
 			</div>
 		</div>
 		
