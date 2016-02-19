@@ -59,8 +59,7 @@
 					<p>Découvrez les nombreux avantages des logiciels libres, ainsi que les logiciels phares pour vos usages les plus courants.</p>
 					<br>
 					<p style="font-size: 14px;olor: #666">
-						Ce site a été conçu pour les étudiants et personnels des Universités d'Île-de-France, en partenariat avec 
-						<a href="#about" data-toggle="modal">Framasoft</a>.
+						Ce site a été conçu pour les étudiants et personnels des Universités d'Île-de-France, en partenariat avec <a data-toggle="modal" data-target="#about">Framasoft</a>
 						<br>
 						Framastart est un service libre et gratuit proposé par l'association Framasoft.
 					</p>
@@ -77,7 +76,7 @@
 							Un logiciel vous permet d'étudier son fonctionnement, 
 							vous autorise à apporter des améliorations, et encourage sa diffusion.
 						</p>
-						<a data-toggle="modal" href="#definition" >
+						<a class="btn" data-toggle="modal" data-target="#definition">
 							<button class="btn btn-default">En savoir plus</button>
 						</a>
 					</div>
@@ -89,7 +88,7 @@
 							Fiabilité, sécurité, pérennité, indépendance, respect des standards et - souvent - gratuité. 
 							Découvrez les nombreux avantages du logiciel libre.
 						</p>
-						<a class="btn" data-toggle="modal" href="#avantages">
+						<a class="btn" data-toggle="modal" data-target="#avantages">
 							<button class="btn btn-default">En savoir plus</button>
 						</a>
 					</div>
@@ -101,7 +100,7 @@
 							La sélection ci-dessous ne représente qu'une infime partie des logiciels libres existants. 
 							De plus l'univers du "libre" ne s'arrête pas au seul domaine logiciel.
 						</p>
-						<a data-toggle="modal" href="#libre">
+						<a class="btn" data-toggle="modal" data-target="#libre">
 							<button class="btn btn-default">En savoir plus</button>
 						</a>
 					</div>
@@ -997,7 +996,7 @@
 		<footer>
 			<div class="container">
 				<p>
-					Copyleft Framasoft 2012 - Sauf mention contraire, les textes sont placés sous licence Creative Commons BY-SA.
+					Copyleft Framasoft 2012 - Sauf mention contraire, les textes sont placés sous licence Creative Commons BY-SA
 					&middot;<a class="btn" data-toggle="modal" data-target="#Credits">Contact &amp; Crédits</a> 
 					&middot;<a class="btn" data-toggle="modal" data-target="#Mentions">A propos</a>
 				</p>
@@ -1006,246 +1005,270 @@
 		
 		<!-- ---------------------- Fenêtres modales ------------------------------------------ -->
 
-		<div class="modal hide" id="definition">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Qu'est-ce qu'un logiciel libre ?</h3>
-			</div>
-			<div class="modal-body">
-				<p>Imaginez que vous vous trouviez dans un restaurant et que vous mangiez un excellent repas. Peut-être aurez vous l'envie de le cuisiner le lendemain chez vous pour vos amis ?</p>
-				<p>C'est impossible, car vous n'avez pas la recette du plat. Vous pouvez toujours le manger dans le restaurant, mais même si vous connaissez le goût, vous ne savez pas comment le reproduire.</p>
-				<p>En informatique, c'est la même chose avec un logiciel. La plupart des logiciels sont distribués sans leur recette, et il est interdit d'essayer de comprendre leur fonctionnement (on parle dans ce cas d'un logiciel propriétaire). Il est interdit de les partager avec vos amis, et il est interdit d'essayer de les modifier pour les adapter à vos besoins.</p>
-				<p>En revanche, un <i>logiciel libre</i> vous garantit plusieurs libertés&nbsp;:</p>
-				<ul>
-					<li>la liberté d'utiliser le logiciel, pour quelque usage que ce soit (liberté 0)</li>
-					<li>la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos propres besoins (liberté 1). L'accès au code source est une condition pour tout ceci  </li>
-					<li>la liberté de redistribuer des copies de façon à pouvoir aider votre voisin (liberté 2)  </li>
-					<li>la liberté d'améliorer le programme, et de diffuser vos améliorations au public, de façon à ce que l'ensemble de la communauté en tire avantage (liberté 3). L'accès au code source est une condition pour tout ceci  </li>
-				</ul>
-				<p>Avec un logiciel libre, vous avez le plat, la recette, le droit de redistribuer (ou de vendre) le plat, la recette, et même de la modifier.</p>	  	  
-				<p><small><em>Texte issu du <a href="http://www.april.org/articles/intro/ll.html">site de l'April</a>, licence LAL version 1.3 ou ultérieure, CC-BY-SA version 2.0 ou ultérieure et GNU FDL version 1.3 ou ultérieure.</em></small></p>
-			</div>
-			<div class="modal-footer">
-				<a href="http://fr.wikipedia.org/wiki/Logiciel_libre" class="btn btn-primary">Définition sur Wikipédia</a>
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
-			</div>
-		</div>
-
-		<div class="modal hide" id="avantages">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Avantages du logiciel libre</h3>
-			</div>
-			<div class="modal-body">
-				<p> Les logiciels libres, par le fait qu'ils mettent à disposition leur code source (= leur "recette de cuisine"), peuvent avoir de nombreux avantages :
-				<ul>
-
-					<li><strong>Sécurité</strong> : le code pouvant être relu par tous, les failles peuvent être découvertes, et corrigées, plus vite.</li>
-					<li><strong>Interopérabilité</strong> : les logiciels libres s'appuient sur des standards ouverts, ce qui permet par exemple à un logiciel de pouvoir facilement ouvrir un fichier d'un autre logiciel, ou d'enregistrer vos données dans différents formats.</li>
-					<li><strong>Pérennité</strong> : la "recette" du logiciel étant publique, il est bien plus simple de pouvoir ouvrir à nouveau vos fichiers dans plusieurs années, ou de faire une nouvelle version du logiciel fonctionnanat sur de nouvelles plateformes.</li>
-					<li><strong>Indépendance</strong> : les logiciels libres ne sont pas dépendants d'un éditeur (qui peut faire faillite demain).</li>
-					<li><strong>Libre concurrence</strong> : grâce aux libertés de modifier et de redistribuer les logiciels sous licences libres, le logiciel arrive rarement dans une "impasse" technique : si un développeur à une meilleure idée, il peut la mettre en oeuvre.</li>
-					<li><strong>Innovation</strong> : chacun pouvant participer à leur développement, les innovations sont rapides (avec parfois, il est vrai, un trop grand foisonnement de fonctionnalités)</li>
-					<li><strong>Transparence</strong> : de par la publication de leur code source, les logiciels libres peuvent inspirer plus confiance que des logiciels dont l'utilisateur ne peut savoir s'il n'a pas de fonctionnalités cachées.</li>
-					<li><strong>Support</strong> : le support est souvent fait par la communauté (voir le développeur lui-même), ce qui peut permettre (pas toujours, il est vrai) une bien plus grande réactivité.</li>
-					<li><strong>Du sur mesure</strong> : le logiciel libre autorise explicitement les adaptations pour votre besoin, quel qu'il soit, sans devoir dépendre du bon vouloir d'un éditeur. </li>
-					<li><strong>Prix</strong> : les logiciels libres sont - dans leur immense majorité - gratuits. Evidemment, il faut prendre en compte d'éventuels coûts de formation. Mais au moins, vous n'avez pas à racheter systématiquement le logiciel lors de la sortie de nouvelles versions où lorsque vous changez de machine.</li>
-					<li><strong>Liberté</strong> : sans doute l'avantage principal, les logiciels libres ne vous contraignent pas. Vous pouvez les utiliser sans conditions, les modifier ou les redistribuer comme bon vous semble, tant que vous respectez les licences.</li>
-				</ul>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+		<!-- Modales bouton 'En savoir plus' -->
+		
+		<div class="modal fade" tabindex="-1" role="dialog" id="definition">
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Qu'est-ce qu'un logiciel libre ?</h4>
+					</div>
+					<div class="modal-body">
+						<p>Imaginez que vous vous trouviez dans un restaurant et que vous mangiez un excellent repas. Peut-être aurez vous l'envie de le cuisiner le lendemain chez vous pour vos amis ?</p>
+						<p>C'est impossible, car vous n'avez pas la recette du plat. Vous pouvez toujours le manger dans le restaurant, mais même si vous connaissez le goût, vous ne savez pas comment le reproduire.</p>
+						<p>En informatique, c'est la même chose avec un logiciel. La plupart des logiciels sont distribués sans leur recette, et il est interdit d'essayer de comprendre leur fonctionnement (on parle dans ce cas d'un logiciel propriétaire). Il est interdit de les partager avec vos amis, et il est interdit d'essayer de les modifier pour les adapter à vos besoins.</p>
+						<p>En revanche, un <i>logiciel libre</i> vous garantit plusieurs libertés&nbsp;:</p>
+						<ul>
+							<li>la liberté d'utiliser le logiciel, pour quelque usage que ce soit (liberté 0)</li>
+							<li>la liberté d'étudier le fonctionnement du programme, et de l'adapter à vos propres besoins (liberté 1). L'accès au code source est une condition pour tout ceci  </li>
+							<li>la liberté de redistribuer des copies de façon à pouvoir aider votre voisin (liberté 2)  </li>
+							<li>la liberté d'améliorer le programme, et de diffuser vos améliorations au public, de façon à ce que l'ensemble de la communauté en tire avantage (liberté 3). L'accès au code source est une condition pour tout ceci  </li>
+						</ul>
+						<p>Avec un logiciel libre, vous avez le plat, la recette, le droit de redistribuer (ou de vendre) le plat, la recette, et même de la modifier.</p>	  	  
+						<p><small><em>Texte issu du <a href="http://www.april.org/articles/intro/ll.html">site de l'April</a>, licence LAL version 1.3 ou ultérieure, CC-BY-SA version 2.0 ou ultérieure et GNU FDL version 1.3 ou ultérieure.</em></small></p>
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<a href="http://fr.wikipedia.org/wiki/Logiciel_libre" target="_blank">
+							<button class="btn btn-primary">
+								Définition sur Wikipedia
+							</button>
+						</a>
+						&nbsp;
+						<button class="btn btn-default" data-dismiss="modal">
+							Fermer
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="modal hide" id="framasoft">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Le réseau Framasoft [TODO]</h3>
-			</div>
-			<div class="modal-body">
-				<p>Ce site a été réalisé en destination pour les étudiants et personnels des Universités d'Île-de-France.</p>
-				<p>Cette sélection de logiciels libres vous est proposée par Framasoft, un réseau de sites web collaboratifs qui vise à faire découvrir les multiples facettes du monde du "libre" au plus large public.</p>Issu du monde éducatif, <strong>Framasoft</strong> est un réseau de sites web collaboratifs à géométrie variable dont le dénominateur commun est le logiciel libre, sa culture et son état d'esprit. Il vise à diffuser le logiciel libre et à le faire connaître auprès du plus large public.</p>
-				<p>Lieu d'orientation, d'informations, d'actualités, d'échanges et de projets, Framasoft, de par la diversité et le dynamisme de son réseau, est aujourd'hui l'une des principales portes d'entrée francophones du logiciel libre. Sa communauté d'utilisateurs est créatrice de ressources et apporte assistance et conseil à ceux qui découvrent et font leur premiers pas avec les logiciels libres. Elle accompagne ceux qui désirent remplacer leurs <a href="/wiki/Logiciel_propri%C3%A9taire" title="Logiciel propriétaire">logiciels propriétaires</a> par des logiciels libres en attachant une attention toute particulière au processus de migration du système d'exploitation Microsoft Windows vers GNU/Linux.</p>
-				<p>Tout ce qui est produit est placé sous licence libre, favorisant ainsi la participation et garantissant que le travail effectué demeurera sans appropriation au bénéfice de tous.</p></p>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-primary">Site Framasoft</a>
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+		<div class="modal fade" tabindex="-1" role="dialog" id="avantages">
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Avantages du logiciel libre</h4>
+					</div>
+					<div class="modal-body" style="background-color:#f9f9f9;">
+						<p> Les logiciels libres, par le fait qu'ils mettent à disposition leur code source (= leur "recette de cuisine"), peuvent avoir de nombreux avantages :
+						<ul>
+
+							<li><strong>Sécurité</strong> : le code pouvant être relu par tous, les failles peuvent être découvertes, et corrigées, plus vite.</li>
+							<li><strong>Interopérabilité</strong> : les logiciels libres s'appuient sur des standards ouverts, ce qui permet par exemple à un logiciel de pouvoir facilement ouvrir un fichier d'un autre logiciel, ou d'enregistrer vos données dans différents formats.</li>
+							<li><strong>Pérennité</strong> : la "recette" du logiciel étant publique, il est bien plus simple de pouvoir ouvrir à nouveau vos fichiers dans plusieurs années, ou de faire une nouvelle version du logiciel fonctionnanat sur de nouvelles plateformes.</li>
+							<li><strong>Indépendance</strong> : les logiciels libres ne sont pas dépendants d'un éditeur (qui peut faire faillite demain).</li>
+							<li><strong>Libre concurrence</strong> : grâce aux libertés de modifier et de redistribuer les logiciels sous licences libres, le logiciel arrive rarement dans une "impasse" technique : si un développeur à une meilleure idée, il peut la mettre en oeuvre.</li>
+							<li><strong>Innovation</strong> : chacun pouvant participer à leur développement, les innovations sont rapides (avec parfois, il est vrai, un trop grand foisonnement de fonctionnalités)</li>
+							<li><strong>Transparence</strong> : de par la publication de leur code source, les logiciels libres peuvent inspirer plus confiance que des logiciels dont l'utilisateur ne peut savoir s'il n'a pas de fonctionnalités cachées.</li>
+							<li><strong>Support</strong> : le support est souvent fait par la communauté (voir le développeur lui-même), ce qui peut permettre (pas toujours, il est vrai) une bien plus grande réactivité.</li>
+							<li><strong>Du sur mesure</strong> : le logiciel libre autorise explicitement les adaptations pour votre besoin, quel qu'il soit, sans devoir dépendre du bon vouloir d'un éditeur. </li>
+							<li><strong>Prix</strong> : les logiciels libres sont - dans leur immense majorité - gratuits. Evidemment, il faut prendre en compte d'éventuels coûts de formation. Mais au moins, vous n'avez pas à racheter systématiquement le logiciel lors de la sortie de nouvelles versions où lorsque vous changez de machine.</li>
+							<li><strong>Liberté</strong> : sans doute l'avantage principal, les logiciels libres ne vous contraignent pas. Vous pouvez les utiliser sans conditions, les modifier ou les redistribuer comme bon vous semble, tant que vous respectez les licences.</li>
+						</ul>
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div class="modal hide fade" id="about">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>A propos</h3>
-			</div>
-			<div class="modal-body">
-				<p>Cette sélection de logiciels libres vous est proposée, sur l'impulsion de <a href="http://unpidf.univ-paris1.fr/">l'Université Numérique Régionale Paris Île-de-France</a> en partenariat avec l'association <a href="http://framasoft.org">Framasoft</a>.</p>
-				Issu du monde éducatif, <strong>Framasoft</strong> est un réseau de sites web collaboratifs à géométrie variable dont le dénominateur commun est le logiciel libre, sa culture et son état d'esprit. Il vise à diffuser le logiciel libre et à le faire connaître auprès du plus large public.</p>
-				<p>Lieu d'orientation, d'informations, d'actualités, d'échanges et de projets, Framasoft, de par la diversité et le dynamisme de son réseau, est aujourd'hui l'une des principales portes d'entrée francophones du logiciel libre. Sa communauté d'utilisateurs est créatrice de ressources et apporte assistance et conseil à ceux qui découvrent et font leur premiers pas avec les logiciels libres. Elle accompagne ceux qui désirent remplacer leurs logiciels propriétaires par des logiciels libres en attachant une attention toute particulière au processus de migration du système d'exploitation Microsoft Windows vers GNU/Linux.</p>
-				<p>Tout ce qui est produit est placé sous licence libre, favorisant ainsi la participation et garantissant que le travail effectué demeurera sans appropriation au bénéfice de tous.</p>
-				<p><small><em>Texte issu de  <a href="http://fr.wikipedia.org/wiki/Framasoft">l'article Framasoft de Wikipédia</a>,  sous licence Creative Commons paternité partage à l’identique (CC BY-SA)</em></small></p>
-			</div>
-			<div class="modal-footer">
-				<a href="http://framasoft.org" class="btn btn-primary">Site Framasoft</a>
-				<a href="http://fr.wikipedia.org/wiki/Framasoft" class="btn btn-primary">Framasoft sur Wikipédia</a>
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+		<div class="modal fade" tabindex="-1" role="dialog" id="libre">
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" role="document" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Pour aller plus loin...</h4>
+					</div>
+					<div class="modal-body" style="background-color:#f9f9f9;">
+						<p>Il existe plusieurs milliers de logiciels libres, couvrant quasiment tous les usages. Vous pouvez en trouver des sélections plus complètes que sur ce site, par exemple sur :
+							<ul>
+								<li>L'annuaire Framasoft (plutôt orienté grand public)</li>
+								<li>Le site PLUME (plutôt orienté universités et recherche)</li>
+								<li>Les forges logicielles Sourceforge ou GitHub (en anglais)</li>	  			
+							</ul> 
+						</p>
+
+						<p>Le mouvement du logiciel libre est constitué de nombreuses institutions (essentiellement des fondations, associations ou groupement d'entreprises), chacune avec ses spécificités. Il est parfois difficile de s'y retrouver, c'est pourquoi nous vous en communiquons une liste non-exhaustive :
+							<ul>
+								<li><a href="http://april.org" alt="site web">April</a> (promotion et défense du logiciel libre)</li>
+								<li><a href="http://aful.org" alt="site web">AFUL</a> (association Française des utilisateurs de logiciels libres)</li>
+								<li><a href="http://dogmazic.net" alt="site web">Dogmazic</a> (promotion de la musique libre)</li>
+								<li><a href="http://framablog.org" alt="site web">Framablog</a> (site d'information sur le mouvement du logiciel libre, et ce qu'il change dans la société actuelle)</li>
+								<li><a href="http://fsf.org" alt="site web">FSF</a> (Free Software Foundation, en anglais)</li>
+								<li><a href="http://formats-ouverts.org" alt="site web">Formats-ouverts</a> (site d'informations sur la problématique des formats ouverts)</li>
+								<li><a href="http://linuxfr.org" alt="site web">Linuxfr</a> (site d'information - parfois technique - autour de GNU/Linux et du logiciel libre)</li>
+								<li><a href="http://libreacces.org" alt="site web">Libre Accès</a> (promotion de la Culture libre)</li>
+								<li><a href="http://laquadrature.net" alt="site web">La Quadrature du Net</a> (information et défense sur le sujet des libertés - numériques, mais pas seulement)</li>
+								<li><a href="http://wikimedia.fr" alt="site web">Wikimédia France</a> (chapitre français de la Wikimédia Foundation, qui structure notamment le projet d'enclyclopédie Wikipédia)</li> 			
+							</ul> 
+						</p>
+						<p>Par ailleurs, il existe près d'une centaine de <a href="http://aful.org/gul/" alt="liste des GUL">"Groupes d'utilisateurs de Logiciels Libres"</a> (GULL), en France (métropole, DOM-TOM).</p>
+							
+						<p>Pour en apprendre plus sur ce mouvement social, et non seulement technique, vous pouvez vous référer au <a href="http://framabook.org/richard-stallman-et-la-revolution-du-logiciel-libre" alt="Framabook RMS">Framabook "Richard Stallman et la révolution du logiciel libre"</a>.<br />
+							Vous pouvez aussi consulter les guides de l'April : <a href="http://www.april.org/Catalogue_Libre">26 logiciels libres à découvrir</a> et <a href="http://www.april.org/publication-du-guide-libre-association">"Guide Libre Association" </a>.
+						</p>	  		 	
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<button class="btn btn-default" data-dismiss="modal">
+							Fermer
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div class="modal hide fade" id="libre">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">×</button>
-				<h3>Pour aller plus loin...</h3>
-			</div>
-			<div class="modal-body">
-				<p>Il existe plusieurs milliers de logiciels libres, couvrant quasiment tous les usages. Vous pouvez en trouver des sélections plus complètes que sur ce site, par exemple sur :
-					<ul>
-						<li>L'annuaire Framasoft (plutôt orienté grand public)</li>
-						<li>Le site PLUME (plutôt orienté universités et recherche)</li>
-						<li>Les forges logicielles Sourceforge ou GitHub (en anglais)</li>	  			
-					</ul> 
-				</p>
-
-				<p>Le mouvement du logiciel libre est constitué de nombreuses institutions (essentiellement des fondations, associations ou groupement d'entreprises), chacune avec ses spécificités. Il est parfois difficile de s'y retrouver, c'est pourquoi nous vous en communiquons une liste non-exhaustive :
-					<ul>
-						<li><a href="http://april.org" alt="site web">April</a> (promotion et défense du logiciel libre)</li>
-						<li><a href="http://aful.org" alt="site web">AFUL</a> (association Française des utilisateurs de logiciels libres)</li>
-						<li><a href="http://dogmazic.net" alt="site web">Dogmazic</a> (promotion de la musique libre)</li>
-						<li><a href="http://framablog.org" alt="site web">Framablog</a> (site d'information sur le mouvement du logiciel libre, et ce qu'il change dans la société actuelle)</li>
-						<li><a href="http://fsf.org" alt="site web">FSF</a> (Free Software Foundation, en anglais)</li>
-						<li><a href="http://formats-ouverts.org" alt="site web">Formats-ouverts</a> (site d'informations sur la problématique des formats ouverts)</li>
-						<li><a href="http://linuxfr.org" alt="site web">Linuxfr</a> (site d'information - parfois technique - autour de GNU/Linux et du logiciel libre)</li>
-						<li><a href="http://libreacces.org" alt="site web">Libre Accès</a> (promotion de la Culture libre)</li>
-						<li><a href="http://laquadrature.net" alt="site web">La Quadrature du Net</a> (information et défense sur le sujet des libertés - numériques, mais pas seulement)</li>
-						<li><a href="http://wikimedia.fr" alt="site web">Wikimédia France</a> (chapitre français de la Wikimédia Foundation, qui structure notamment le projet d'enclyclopédie Wikipédia)</li> 			
-					</ul> 
-				</p>
-				<p>Par ailleurs, il existe près d'une centaine de <a href="http://aful.org/gul/" alt="liste des GUL">"Groupes d'utilisateurs de Logiciels Libres"</a> (GULL), en France (métropole, DOM-TOM).</p>
-					
-				<p>Pour en apprendre plus sur ce mouvement social, et non seulement technique, vous pouvez vous référer au <a href="http://framabook.org/richard-stallman-et-la-revolution-du-logiciel-libre" alt="Framabook RMS">Framabook "Richard Stallman et la révolution du logiciel libre"</a>.<br />
-					Vous pouvez aussi consulter les guides de l'April : <a href="http://www.april.org/Catalogue_Libre">26 logiciels libres à découvrir</a> et <a href="http://www.april.org/publication-du-guide-libre-association">"Guide Libre Association" </a>.
-				</p>	  		 	
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn" data-dismiss="modal">Fermer</a>
+		<!-- Fin modales bouton 'En savoir plus' -->
+		
+		<div class="modal fade" tabindex="-1" role="dialog" id="about">
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" role="document" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">À propos</h4>
+					</div>
+					<div class="modal-body" style="background-color:#f9f9f9;">
+						<p>Cette sélection de logiciels libres vous est proposée, sur l'impulsion de <a href="http://unpidf.univ-paris1.fr/">l'Université Numérique Régionale Paris Île-de-France</a> en partenariat avec l'association <a href="http://framasoft.org">Framasoft</a>.</p>
+						Issu du monde éducatif, <strong>Framasoft</strong> est un réseau de sites web collaboratifs à géométrie variable dont le dénominateur commun est le logiciel libre, sa culture et son état d'esprit. Il vise à diffuser le logiciel libre et à le faire connaître auprès du plus large public.</p>
+						<p>Lieu d'orientation, d'informations, d'actualités, d'échanges et de projets, Framasoft, de par la diversité et le dynamisme de son réseau, est aujourd'hui l'une des principales portes d'entrée francophones du logiciel libre. Sa communauté d'utilisateurs est créatrice de ressources et apporte assistance et conseil à ceux qui découvrent et font leur premiers pas avec les logiciels libres. Elle accompagne ceux qui désirent remplacer leurs logiciels propriétaires par des logiciels libres en attachant une attention toute particulière au processus de migration du système d'exploitation Microsoft Windows vers GNU/Linux.</p>
+						<p>Tout ce qui est produit est placé sous licence libre, favorisant ainsi la participation et garantissant que le travail effectué demeurera sans appropriation au bénéfice de tous.</p>
+						<p><small><em>Texte issu de  <a href="http://fr.wikipedia.org/wiki/Framasoft">l'article Framasoft de Wikipédia</a>,  sous licence Creative Commons paternité partage à l’identique (CC BY-SA)</em></small></p>
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<a href="http://framasoft.org" target="_blank">
+							<button class="btn btn-primary">
+								Site Framasoft
+							</button>
+						</a>
+						&nbsp;
+						<button class="btn btn-default" data-dismiss="modal">
+							Fermer
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		
 		<div class="fade modal" tabindex="-1" role="dialog" id="Credits">
 			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
-				<div class="modal-header" style="background-color:#585858;color:#fff;">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Crédits</h4>
-				</div>
-				<div class="modal-body" style="background-color:#f9f9f9;">
-					<p>Pour toute question concernant Framastart, vous pouvez envoyer utiliser le site <strong><a href="http://contact.framasoft.org">http://contact.framasoft.org</a></strong></p>
-					<br>
-					<ul>
-						<li>Framastart est un site web référençant les logiciels libres les plus courants.</li>
-						<li>Framastart est placé sous licence libre <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA 3.0</a></li>
-						<li>Framastart utilise le framework libre Boostrap ainsi que la librairie jQuery.</li>
-					</ul>
-				</div>
-				<div class="modal-footer" style="background-color:#f9f9f9;">
-					<button class="btn btn-default" data-dismiss="modal">Fermer</button>
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Crédits</h4>
+					</div>
+					<div class="modal-body" style="background-color:#f9f9f9;">
+						<p>Pour toute question concernant Framastart, vous pouvez envoyer utiliser le site <strong><a href="http://contact.framasoft.org">http://contact.framasoft.org</a></strong></p>
+						<br>
+						<ul>
+							<li>Framastart est un site web référençant les logiciels libres les plus courants.</li>
+							<li>Framastart est placé sous licence libre <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons BY-SA 3.0</a></li>
+							<li>Framastart utilise le framework libre Boostrap ainsi que la librairie jQuery.</li>
+						</ul>
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<button class="btn btn-default" data-dismiss="modal">Fermer</button>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="modal fade" tabindex="-1" role="dialog" id="Mentions">
-			<div class="modal-header" style="background-color:#585858;color:#fff;">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Mentions légales</h4>
-			</div>
-			<div class="modal-body" style="background-color:#f9f9f9;">			
-				<h2>Editeur</h2>
-				<h3>Framasoft</h3>
-				<p>Association loi 1901 déclarée en sous-préfecture d’Arles le 2
-				décembre 2003 sous le n° 0132007842 </p>
-				<p>N° Siret : 500 715 776 00018</p>
-				<h3>Siège social</h3>
-				<p>Association Framasoft<br />
-				Pierre-Yves Gosset<br />
-				c/o Locaux Motiv<br />
-				10 bis, rue Jangot<br />
-				69007 LYON</p>
-				<p>Pour nous contacter : http://contact.framasoft.org</p>
-				<h3>Directeur de la publication</h3>
-				<p>Monsieur Christophe MASUTTI, Président</p>
-				<h3>Hébergeur</h3>
-				<p>OVH</p>
-				<p>SAS au capital de 10 000 000 € RCS Roubaix – Tourcoing 424 761 419
-				00045 </p>
-				<p>Code APE 6202A - N° TVA : FR 22 424 761 419</p>
-				<p>Siège social : 2 rue Kellermann 59100 Roubaix - France.</p>
-				<h1>INFORMATIQUE ET LIBERTES</h1>
-				<h2>Informations personnelles collectées</h2>
-				<p>En France, les données personnelles sont notamment protégées par la
-				loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004,
-				l’article L. 226-13 du Code pénal et la Directive Européenne du 24
-				octobre 1995.</p>
-				<p>En tout état de cause Framasoft ne collecte des informations
-				personnelles relatives à l’utilisateur (nom, adresse électronique,
-				coordonnées téléphoniques) que pour le besoin des services proposés par
-				les sites du réseau Framasoft, notamment pour l’inscription à des
-				espaces de discussion par le biais de formulaires en ligne ou pour des
-				traitements statistiques. L’utilisateur fournit ces informations en
-				toute connaissance de cause, notamment lorsqu’il procède par lui-même à
-				leur saisie. Il est alors précisé à l’utilisateur des sites du réseau
-				Framasoft le caractère obligatoire ou non des informations qu’il serait
-				amené à fournir.</p>
-				<h2>Rectification des informations nominatives collectées</h2>
-				<p>Conformément aux dispositions de l’article 34 de la loi n° 48-87 du
-				6 janvier 1978, l’utilisateur dispose d’un droit de modification des
-				données nominatives collectées le concernant. Pour ce faire,
-				l’utilisateur envoie à Framasoft : </p>
-				<p>° un courrier électronique en utilisant le formulaire de contact </p>
-				<p>° un courrier à l’adresse du siège de l’association (indiquée
-				ci-dessus) en indiquant son nom ou sa raison sociale, ses coordonnées
-				physiques et/ou électroniques, ainsi que le cas échéant la référence
-				dont il disposerait en tant qu’utilisateur du site Framasoft.</p>
-				<p>La modification interviendra dans des délais raisonnables à compter
-				de la réception de la demande de l’utilisateur.</p>
-				<h1>LIMITATION DE RESPONSABILITE</h1>
-				<p>Ce site comporte des informations mises à disposition par des
-				sociétés externes ou des liens hypertextes vers d’autres sites qui
-				n’ont pas été développés par le Framasoft. Le contenu mis à disposition
-				sur le Site est fourni à titre informatif. L’existence d’un lien de ce
-				Site vers un autre site ne constitue pas une validation de ce site ou
-				de son contenu. Il appartient à l’internaute d’utiliser ces
-				informations avec discernement et esprit critique. La responsabilité de
-				Framasoft ne saurait être engagée du fait aux informations, opinions et
-				recommandations formulées par des tiers.</p>
-				<p>Framasoft ne pourra être tenue responsable des dommages directs et
-				indirects causés au matériel de l’utilisateur, lors de l’accès au site
-				, et résultant soit de l’utilisation d’un matériel ne répondant pas aux
-				spécifications techniques requises, soit de l’apparition d’un bug ou
-				d’une incompatibilité.</p>
-				<p>Framasoft ne pourra également être tenue responsable des dommages
-				indirects (tels par exemple qu’une perte de marché ou perte d’une
-				chance) consécutifs à l’utilisation du site.</p>
-				<p>Des espaces interactifs (possibilité de poser des questions dans
-				l’espace contact) sont à la disposition des utilisateurs sur le site
-				Framasoft http://forum.framasoft.org. Framasoft se réserve le droit de
-				supprimer, sans mise en demeure préalable, tout contenu déposé dans cet
-				espace qui contreviendrait à la législation applicable en France, en
-				particulier aux dispositions relatives à la protection des données. Le
-				cas échéant, Framasoft se réserve également la possibilité de mettre en
-				cause la responsabilité civile et/ou pénale de l’utilisateur, notamment
-				en cas de message à caractère raciste, injurieux, diffamant, ou
-				pornographique, quel que soit le support utilisé (texte, photographie…).</p>
-				<h2>Limitations contractuelles sur les données techniques.</h2>
-				<p>Framasoft ne pourra être tenue responsable de dommages matériels
-				liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à
-				accéder au site en utilisant un matériel récent, ne contenant pas de
-				virus et avec un navigateur de dernière génération mis-à-jour</p>
-				<h2>Propriété intellectuelle.</h2>
-				<p>Les contenus sont publiés sous la responsabilité des utilisateurs.</p>
-			</div>
-			<div class="modal-footer" style="background-color:#f9f9f9;">
-				<button class="btn btn-default" data-dismiss="modal">Fermer</button>
+			<div class="modal-dialog" role="document"> <!-- modal-dialog -->
+				<div class="modal-content"> <!-- modal-content -->
+					<div class="modal-header" style="background-color:#585858;color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Mentions légales</h4>
+					</div>
+					<div class="modal-body" style="background-color:#f9f9f9;">			
+						<h2>Editeur</h2>
+						<h3>Framasoft</h3>
+						<p>Association loi 1901 déclarée en sous-préfecture d’Arles le 2
+						décembre 2003 sous le n° 0132007842 </p>
+						<p>N° Siret : 500 715 776 00018</p>
+						<h3>Siège social</h3>
+						<p>Association Framasoft<br />
+						Pierre-Yves Gosset<br />
+						c/o Locaux Motiv<br />
+						10 bis, rue Jangot<br />
+						69007 LYON</p>
+						<p>Pour nous contacter : http://contact.framasoft.org</p>
+						<h3>Directeur de la publication</h3>
+						<p>Monsieur Christophe MASUTTI, Président</p>
+						<h3>Hébergeur</h3>
+						<p>OVH</p>
+						<p>SAS au capital de 10 000 000 € RCS Roubaix – Tourcoing 424 761 419
+						00045 </p>
+						<p>Code APE 6202A - N° TVA : FR 22 424 761 419</p>
+						<p>Siège social : 2 rue Kellermann 59100 Roubaix - France.</p>
+						<h1>INFORMATIQUE ET LIBERTES</h1>
+						<h2>Informations personnelles collectées</h2>
+						<p>En France, les données personnelles sont notamment protégées par la
+						loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004,
+						l’article L. 226-13 du Code pénal et la Directive Européenne du 24
+						octobre 1995.</p>
+						<p>En tout état de cause Framasoft ne collecte des informations
+						personnelles relatives à l’utilisateur (nom, adresse électronique,
+						coordonnées téléphoniques) que pour le besoin des services proposés par
+						les sites du réseau Framasoft, notamment pour l’inscription à des
+						espaces de discussion par le biais de formulaires en ligne ou pour des
+						traitements statistiques. L’utilisateur fournit ces informations en
+						toute connaissance de cause, notamment lorsqu’il procède par lui-même à
+						leur saisie. Il est alors précisé à l’utilisateur des sites du réseau
+						Framasoft le caractère obligatoire ou non des informations qu’il serait
+						amené à fournir.</p>
+						<h2>Rectification des informations nominatives collectées</h2>
+						<p>Conformément aux dispositions de l’article 34 de la loi n° 48-87 du
+						6 janvier 1978, l’utilisateur dispose d’un droit de modification des
+						données nominatives collectées le concernant. Pour ce faire,
+						l’utilisateur envoie à Framasoft : </p>
+						<p>° un courrier électronique en utilisant le formulaire de contact </p>
+						<p>° un courrier à l’adresse du siège de l’association (indiquée
+						ci-dessus) en indiquant son nom ou sa raison sociale, ses coordonnées
+						physiques et/ou électroniques, ainsi que le cas échéant la référence
+						dont il disposerait en tant qu’utilisateur du site Framasoft.</p>
+						<p>La modification interviendra dans des délais raisonnables à compter
+						de la réception de la demande de l’utilisateur.</p>
+						<h1>LIMITATION DE RESPONSABILITE</h1>
+						<p>Ce site comporte des informations mises à disposition par des
+						sociétés externes ou des liens hypertextes vers d’autres sites qui
+						n’ont pas été développés par le Framasoft. Le contenu mis à disposition
+						sur le Site est fourni à titre informatif. L’existence d’un lien de ce
+						Site vers un autre site ne constitue pas une validation de ce site ou
+						de son contenu. Il appartient à l’internaute d’utiliser ces
+						informations avec discernement et esprit critique. La responsabilité de
+						Framasoft ne saurait être engagée du fait aux informations, opinions et
+						recommandations formulées par des tiers.</p>
+						<p>Framasoft ne pourra être tenue responsable des dommages directs et
+						indirects causés au matériel de l’utilisateur, lors de l’accès au site
+						, et résultant soit de l’utilisation d’un matériel ne répondant pas aux
+						spécifications techniques requises, soit de l’apparition d’un bug ou
+						d’une incompatibilité.</p>
+						<p>Framasoft ne pourra également être tenue responsable des dommages
+						indirects (tels par exemple qu’une perte de marché ou perte d’une
+						chance) consécutifs à l’utilisation du site.</p>
+						<p>Des espaces interactifs (possibilité de poser des questions dans
+						l’espace contact) sont à la disposition des utilisateurs sur le site
+						Framasoft http://forum.framasoft.org. Framasoft se réserve le droit de
+						supprimer, sans mise en demeure préalable, tout contenu déposé dans cet
+						espace qui contreviendrait à la législation applicable en France, en
+						particulier aux dispositions relatives à la protection des données. Le
+						cas échéant, Framasoft se réserve également la possibilité de mettre en
+						cause la responsabilité civile et/ou pénale de l’utilisateur, notamment
+						en cas de message à caractère raciste, injurieux, diffamant, ou
+						pornographique, quel que soit le support utilisé (texte, photographie…).</p>
+						<h2>Limitations contractuelles sur les données techniques.</h2>
+						<p>Framasoft ne pourra être tenue responsable de dommages matériels
+						liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à
+						accéder au site en utilisant un matériel récent, ne contenant pas de
+						virus et avec un navigateur de dernière génération mis-à-jour</p>
+						<h2>Propriété intellectuelle.</h2>
+						<p>Les contenus sont publiés sous la responsabilité des utilisateurs.</p>
+					</div>
+					<div class="modal-footer" style="background-color:#f9f9f9;">
+						<button class="btn btn-default" data-dismiss="modal">Fermer</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		
