@@ -11,7 +11,6 @@ Framastart
 ==========
 
 Site conçu pour les étudiants et personnels des Universités d'Île-de-France, en partenariat avec Framasoft.
-http://framastart.org/
 
 
 Contribuer
